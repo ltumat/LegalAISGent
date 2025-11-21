@@ -2,7 +2,7 @@ name: LegalAISGent
 
 services:
   postgres:
-    image: postgres
+    image: pgvector/pgvector:pg16
     container_name: LegalAISGent-postgres
     environment:
       POSTGRES_DB: LegalAISGent
@@ -11,7 +11,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - LegalAISGent_postgres_data:/var/lib/postgresql
+      - LegalAISGent_postgres_data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
