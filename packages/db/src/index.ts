@@ -13,3 +13,4 @@ const pool = new pg.Pool({
 export const db = drizzle(pool, { schema });
 
 export * from "./schema";
+export { eq, desc, and, or } from "drizzle-orm";

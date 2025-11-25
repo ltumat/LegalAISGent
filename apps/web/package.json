@@ -37,7 +37,8 @@
     "@ai-sdk/google": "catalog:",
     "better-auth": "catalog:",
     "@LegalAISGent/api": "workspace:*",
-    "@LegalAISGent/auth": "workspace:*"
+    "@LegalAISGent/auth": "workspace:*",
+    "@LegalAISGent/db": "workspace:*"
   },
   "devDependencies": {
     "@tanstack/react-router-devtools": "^1.132.31",
