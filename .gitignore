@@ -48,6 +48,10 @@ coverage
 .cache
 tmp
 temp
+.venv
+__pycache__/
+*.pyc
+.pytest_cache/
 
 # Qdrant
 qdrant/
